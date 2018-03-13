@@ -2,8 +2,8 @@ package uberReciptSystem;
 
 import java.util.Scanner;
 
-public class SelectTrip {
-	static int x;
+public class OptionPassenger {
+	int distance = 0;
 
 	void tripChoice() {
 		System.out.println(":::SELECT YOUR TRIP:::");
@@ -12,7 +12,7 @@ public class SelectTrip {
 		System.out.println("3. DELHI TO MODINAGAR");
 	}
 
-	void selectTrip() {
+	void selectTrip(int x) {
 		switch (x) {
 		case 1:
 			System.out.println("YOUR TRIP IS FROM DELHI TO CHANDIGARH ,SELECT YOUR RIDE");
@@ -26,6 +26,14 @@ public class SelectTrip {
 		default:
 			System.out.println("WRONG ENTRY PLEASE TRY AGAIN");
 		}
+		if (x == 1) {
+			distance = 360;
+		} else if (x == 2) {
+			distance = 36;
+		} else if (x == 3) {
+			distance = 74;
+		}
+
 	}
 
 	void rideChoice() {
@@ -35,9 +43,6 @@ public class SelectTrip {
 	}
 
 	void selectRide(int y) {
-
-		int distance = 0;
-		distance = specifyDistance(distance);
 
 		switch (y) {
 		case 1:
@@ -60,28 +65,4 @@ public class SelectTrip {
 			System.out.println("INVALID ENTRY");
 		}
 	}
-
-	private int specifyDistance(int distance) {
-		if (x == 1) {
-			distance = 360;
-		} else if (x == 2) {
-			distance = 36;
-		} else if (x == 3) {
-			distance = 74;
-		}
-		return distance;
-	}
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		SelectTrip ob1 = new SelectTrip();
-		ob1.tripChoice();
-		x = sc.nextInt();
-		ob1.selectTrip();
-		SelectTrip ob2 = new SelectTrip();
-		ob2.rideChoice();
-		int a = sc.nextInt();
-		ob2.selectRide(a);
-	}
-
 }
