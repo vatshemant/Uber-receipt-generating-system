@@ -1,6 +1,10 @@
 package uberReciptSystem;
 
+import java.util.Scanner;
+
 public class OptionCorporate {
+	Scanner sc = new Scanner(System.in);
+
 	void detailsOption() {
 		System.out.println(":::::CHOSE THE OPTION TO SEE THE DETAILS:::::");
 		System.out.println(" 1. DRIVER ");
@@ -17,9 +21,17 @@ public class OptionCorporate {
 		case 2:
 			System.out.println("::::PASSENGER DETAILS ARE AS FOLLOWS::::");
 			break;
-		default:
+		default: {
 			System.out.println("::::INVALID ENTRY::::");
-
+			recallMethod();
 		}
+		}
+	}
+
+	private void recallMethod() {
+		SelectCategory option = new SelectCategory();
+		option.userCategory();
+		int a = sc.nextInt();
+		option.choseCategory(a);
 	}
 }
