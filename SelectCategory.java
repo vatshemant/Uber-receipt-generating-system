@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class SelectCategory {
 	char ch;
+	int a;
 
 	void userCategory() {
 		System.out.println(":::SELECT YOUR CATEGORY:::");
@@ -20,17 +21,16 @@ public class SelectCategory {
 			OptionDriver ob = new OptionDriver();
 			ob.inputDetails();
 			ob.displayDetails();
+
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
 			ch = sc.next().charAt(0);
 			if (ch == 'y') {
-				SelectCategory option = new SelectCategory();
-				option.userCategory();
-				int a = sc.nextInt();
-				option.choseCategory(a);
+				recallMethod(sc);
 			} else {
 				System.out.println("THANKS,SEE YOU SOON");
 				break;
 			}
+
 			break;
 		case 2:
 			System.out.println("::WELCOME TO PASSENGER DOMAIN::");
@@ -41,47 +41,42 @@ public class SelectCategory {
 			ob1.rideChoice();
 			int a = sc.nextInt();
 			ob1.selectRide(a);
+
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
 			ch = sc.next().charAt(0);
 			if (ch == 'y') {
-				SelectCategory option = new SelectCategory();
-				option.userCategory();
-				int q = sc.nextInt();
-				option.choseCategory(q);
+				recallMethod(sc);
 			} else {
 				System.out.println("THANKS,SEE YOU SOON");
 				break;
 			}
-			break;
 
+			break;
 		case 3:
 			System.out.println("::WELCOME TO CORPORATE DOMAIN::");
 			OptionCorporate ob2 = new OptionCorporate();
 			ob2.detailsOption();
 			int y = sc.nextInt();
 			ob2.displayDetails(y);
+
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
 			ch = sc.next().charAt(0);
 			if (ch == 'y') {
-				SelectCategory option = new SelectCategory();
-				option.userCategory();
-				int w = sc.nextInt();
-				option.choseCategory(w);
+				recallMethod(sc);
 			} else {
 				System.out.println("THANKS,SEE YOU SOON");
 				break;
 			}
+
 			break;
-
 		default: {
+			System.out.println("::INVALID ENTRY,PLEASE TRY AGAIN::");
 			recallMethod(sc);
-
 		}
 		}
 	}
 
 	private void recallMethod(Scanner sc) {
-		System.out.println("::INVALID ENTRY,PLEASE TRY AGAIN::");
 		SelectCategory option = new SelectCategory();
 		option.userCategory();
 		int a1 = sc.nextInt();
