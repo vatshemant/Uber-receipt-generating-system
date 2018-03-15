@@ -76,7 +76,7 @@ public class SelectCategory {
 		}
 	}
 
-	private void recallMethod(Scanner sc) {
+	private void recallMethod(Scanner sc) { //Method to recall SelectCategory class.
 		SelectCategory option = new SelectCategory();
 		option.userCategory();
 		int a1 = sc.nextInt();
