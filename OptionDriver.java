@@ -7,7 +7,7 @@ public class OptionDriver {
 	String s;
 	int no;
 
-	void inputDetails() { //function to take details of driver.
+	void inputDetails() { //function to input details of driver.
 		System.out.println("::::ENTER YOUR DETAILS::::");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER YOUR NAME");
