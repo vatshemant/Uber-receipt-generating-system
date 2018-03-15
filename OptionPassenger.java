@@ -40,7 +40,7 @@ public class OptionPassenger {
 		}
 	}
 
-	private void recallMethod() {
+	private void recallMethod() {//Method to recall SelectCategory class.
 		SelectCategory option = new SelectCategory();
 		option.userCategory();
 		int a = sc.nextInt();
