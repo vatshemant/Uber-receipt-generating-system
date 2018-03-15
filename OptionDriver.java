@@ -7,7 +7,7 @@ public class OptionDriver {
 	String s;
 	int no;
 
-	void inputDetails() {
+	void inputDetails() { //function to take details of driver.
 		System.out.println("::::ENTER YOUR DETAILS::::");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER YOUR NAME");
@@ -17,7 +17,7 @@ public class OptionDriver {
 
 	}
 
-	void displayDetails() {
+	void displayDetails() { // function to display details of driver.
 		System.out.println("DRIVER NAME::::::::: " + s);
 		System.out.println("VEHICLE NUMBER:::::: " + no);
 		System.out.println("DISTANCE TRAVELLED:: " + ob.distance + " kms.");
