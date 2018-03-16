@@ -1,8 +1,6 @@
 # Uber-receipt-generating-system
 This project basically generates a fare slip according to the trip you have chosen out of the given options. 
 
-The user will enter a request and after the trip is completed a virtual fare slip will be generated having all the details. 
-
 There are total of three domians 
 1. Driver: In this domain driver can register itself and check his daily trips and payments.
 
