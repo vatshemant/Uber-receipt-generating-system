@@ -3,8 +3,9 @@ package uberReciptSystem;
 import java.util.Scanner;
 
 public class OptionPassenger {
+
 	Scanner sc = new Scanner(System.in);
-	int distance = 0;
+	int distance;
 	int fare;
 
 	void tripChoice() {
@@ -18,29 +19,24 @@ public class OptionPassenger {
 		switch (x) {
 		case 1:
 			System.out.println("YOUR TRIP IS FROM DELHI TO CHANDIGARH ,SELECT YOUR RIDE");
+			distance = 360;
 			break;
 		case 2:
 			System.out.println("YOUR TRIP IS FROM DELHI TO FARIDABAD ,SELECT YOUR RIDE");
+			distance = 36;
 			break;
 		case 3:
 			System.out.println("YOUR TRIP IS FROM DELHI TO MODINAGAR ,SELECT YOUR RIDE");
+			distance = 74;
 			break;
 		default: {
 			System.out.println("WRONG ENTRY PLEASE TRY AGAIN");
 			recallMethod();
 		}
 		}
-
-		if (x == 1) {
-			distance = 360;
-		} else if (x == 2) {
-			distance = 36;
-		} else if (x == 3) {
-			distance = 74;
-		}
 	}
 
-	private void recallMethod() {//Method to recall SelectCategory class.
+	private void recallMethod() {
 		SelectCategory option = new SelectCategory();
 		option.userCategory();
 		int a = sc.nextInt();
@@ -81,4 +77,5 @@ public class OptionPassenger {
 		}
 		}
 	}
+
 }
