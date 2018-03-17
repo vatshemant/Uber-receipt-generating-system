@@ -18,9 +18,9 @@ public class SelectCategory {
 		switch (c) {
 		case 1:
 			System.out.println("::WELCOME TO DRIVER DOMAIN::: ");
-			OptionDriver ob = new OptionDriver();
-			ob.inputDetails();
-			ob.displayDetails();
+			OptionDriver driver = new OptionDriver();
+			driver.inputDetails();
+			driver.displayDetails();
 
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
 			ch = sc.next().charAt(0);
@@ -34,13 +34,13 @@ public class SelectCategory {
 			break;
 		case 2:
 			System.out.println("::WELCOME TO PASSENGER DOMAIN::");
-			OptionPassenger ob1 = new OptionPassenger();
-			ob1.tripChoice();
+			OptionPassenger passenger = new OptionPassenger();
+			passenger.tripChoice();
 			int x = sc.nextInt();
-			ob1.selectTrip(x);
-			ob1.rideChoice();
+			passenger.selectTrip(x);
+			passenger.rideChoice();
 			int a = sc.nextInt();
-			ob1.selectRide(a);
+			passenger.selectRide(a);
 
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
 			ch = sc.next().charAt(0);
@@ -54,10 +54,10 @@ public class SelectCategory {
 			break;
 		case 3:
 			System.out.println("::WELCOME TO CORPORATE DOMAIN::");
-			OptionCorporate ob2 = new OptionCorporate();
-			ob2.detailsOption();
+			OptionCorporate corporate = new OptionCorporate();
+			corporate.detailsOption();
 			int y = sc.nextInt();
-			ob2.displayDetails(y);
+			corporate.displayDetails(y);
 
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
 			ch = sc.next().charAt(0);
@@ -76,10 +76,10 @@ public class SelectCategory {
 		}
 	}
 
-	private void recallMethod(Scanner sc) { //Method to recall SelectCategory class.
-		SelectCategory option = new SelectCategory();
-		option.userCategory();
+	private void recallMethod(Scanner sc) {
+		SelectCategory category = new SelectCategory();
+		category.userCategory();
 		int a1 = sc.nextInt();
-		option.choseCategory(a1);
+		category.choseCategory(a1);
 	}
 }
