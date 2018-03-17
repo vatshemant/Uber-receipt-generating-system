@@ -37,10 +37,10 @@ public class OptionPassenger {
 	}
 
 	private void recallMethod() {
-		SelectCategory option = new SelectCategory();
-		option.userCategory();
+		SelectCategory category = new SelectCategory();
+		category.userCategory();
 		int a = sc.nextInt();
-		option.choseCategory(a);
+		category.choseCategory(a);
 	}
 
 	void rideChoice() {
