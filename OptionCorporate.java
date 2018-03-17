@@ -11,12 +11,12 @@ public class OptionCorporate {
 		System.out.println(" 2. PASSENGER");
 	}
 
-	void displayDetails(int x) {
+	void displayDetails(int x) { 
 		switch (x) {
 		case 1:
 			System.out.println("::::DRIVER DETAILS ARE AS FOLLOWS::::");
-			OptionDriver ob = new OptionDriver();
-			ob.displayDetails();
+			OptionDriver driver = new OptionDriver();
+			driver.displayDetails();
 			break;
 		case 2:
 			System.out.println("::::PASSENGER DETAILS ARE AS FOLLOWS::::");
@@ -28,10 +28,10 @@ public class OptionCorporate {
 		}
 	}
 
-	private void recallMethod() { //Method to recall SelectCategory class.
-		SelectCategory option = new SelectCategory();
-		option.userCategory();
+	private void recallMethod() {
+		SelectCategory category = new SelectCategory();
+		category.userCategory();
 		int a = sc.nextInt();
-		option.choseCategory(a);
+		category.choseCategory(a);
 	}
 }
