@@ -3,8 +3,7 @@ package uberReciptSystem;
 import java.util.Scanner;
 
 public class SelectCategory {
-	char ch;
-	int a;
+	static char choice;
 
 	void userCategory() {
 		System.out.println(":::SELECT YOUR CATEGORY:::");
@@ -13,20 +12,18 @@ public class SelectCategory {
 		System.out.println(" 3. CORPORATE ");
 	}
 
-	void choseCategory(int c) {
+	void choseCategory(int c, OptionDriver driver, OptionPassenger passenger, OptionCorporate corporate) {
+
 		Scanner sc = new Scanner(System.in);
 		switch (c) {
 		case 1:
 			System.out.println("::WELCOME TO DRIVER DOMAIN::: ");
-			OptionDriver driver = new OptionDriver();
 			driver.inputDetails();
-			driver.displayDetails();
+			driver.displayDetails(passenger);
 
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
-			ch = sc.next().charAt(0);
-			if (ch == 'y') {
-				recallMethod(sc);
-			} else {
+			choice = sc.next().charAt(0);
+			if (choice == 'n') {
 				System.out.println("THANKS,SEE YOU SOON");
 				break;
 			}
@@ -34,7 +31,6 @@ public class SelectCategory {
 			break;
 		case 2:
 			System.out.println("::WELCOME TO PASSENGER DOMAIN::");
-			OptionPassenger passenger = new OptionPassenger();
 			passenger.tripChoice();
 			int x = sc.nextInt();
 			passenger.selectTrip(x);
@@ -43,10 +39,8 @@ public class SelectCategory {
 			passenger.selectRide(a);
 
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
-			ch = sc.next().charAt(0);
-			if (ch == 'y') {
-				recallMethod(sc);
-			} else {
+			choice = sc.next().charAt(0);
+			if (choice == 'n') {
 				System.out.println("THANKS,SEE YOU SOON");
 				break;
 			}
@@ -54,32 +48,19 @@ public class SelectCategory {
 			break;
 		case 3:
 			System.out.println("::WELCOME TO CORPORATE DOMAIN::");
-			OptionCorporate corporate = new OptionCorporate();
 			corporate.detailsOption();
 			int y = sc.nextInt();
-			corporate.displayDetails(y);
-
+			corporate.displayDetails(y, driver, passenger);
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
-			ch = sc.next().charAt(0);
-			if (ch == 'y') {
-				recallMethod(sc);
-			} else {
+			choice = sc.next().charAt(0);
+			if (choice == 'n') {
 				System.out.println("THANKS,SEE YOU SOON");
 				break;
 			}
-
 			break;
 		default: {
 			System.out.println("::INVALID ENTRY,PLEASE TRY AGAIN::");
-			recallMethod(sc);
 		}
 		}
-	}
-
-	private void recallMethod(Scanner sc) {
-		SelectCategory category = new SelectCategory();
-		category.userCategory();
-		int a1 = sc.nextInt();
-		category.choseCategory(a1);
 	}
 }
