@@ -11,27 +11,19 @@ public class OptionCorporate {
 		System.out.println(" 2. PASSENGER");
 	}
 
-	void displayDetails(int x) { 
+	void displayDetails(int x, OptionDriver driver, OptionPassenger passenger) {
 		switch (x) {
 		case 1:
 			System.out.println("::::DRIVER DETAILS ARE AS FOLLOWS::::");
-			OptionDriver driver = new OptionDriver();
-			driver.displayDetails();
+			driver.displayDetails(passenger);
 			break;
 		case 2:
 			System.out.println("::::PASSENGER DETAILS ARE AS FOLLOWS::::");
 			break;
 		default: {
 			System.out.println("::::INVALID ENTRY::::");
-			recallMethod();
-		}
-		}
-	}
 
-	private void recallMethod() {
-		SelectCategory category = new SelectCategory();
-		category.userCategory();
-		int a = sc.nextInt();
-		category.choseCategory(a);
+		}
+		}
 	}
 }
