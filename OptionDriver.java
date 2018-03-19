@@ -4,23 +4,22 @@ import java.util.Scanner;
 
 public class OptionDriver {
 
-	OptionPassenger passenger = new OptionPassenger();
-	String s;
-	int no;
+	String name;
+	int vehicleNumber;
 
 	void inputDetails() {
 		System.out.println("::::ENTER YOUR DETAILS::::");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER YOUR NAME");
-		s = sc.nextLine();
+		name = sc.nextLine();
 		System.out.println("ENTER VEHICLE NUMBER");
-		no = sc.nextInt();
+		vehicleNumber = sc.nextInt();
 
 	}
 
-	void displayDetails() {
-		System.out.println("DRIVER NAME::::::::: " + s);
-		System.out.println("VEHICLE NUMBER:::::: " + no);
+	void displayDetails(OptionPassenger passenger) {
+		System.out.println("DRIVER NAME::::::::: " + name);
+		System.out.println("VEHICLE NUMBER:::::: " + vehicleNumber);
 		System.out.println("DISTANCE TRAVELLED:: " + passenger.distance + " kms.");
 		System.out.println("AMOUNT EARNED::::::: " + passenger.fare + " Rupees.");
 
