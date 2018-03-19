@@ -15,7 +15,7 @@ public class OptionCorporate {
 		switch (x) {
 		case 1:
 			System.out.println("::::DRIVER DETAILS ARE AS FOLLOWS::::");
-			driver.displayDetails(passenger);
+			driver.driverlist(driver,passenger);
 			break;
 		case 2:
 			System.out.println("::::PASSENGER DETAILS ARE AS FOLLOWS::::");
