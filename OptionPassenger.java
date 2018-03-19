@@ -31,16 +31,10 @@ public class OptionPassenger {
 			break;
 		default: {
 			System.out.println("WRONG ENTRY PLEASE TRY AGAIN");
-			recallMethod();
+			break;
 		}
-		}
-	}
 
-	private void recallMethod() {
-		SelectCategory category = new SelectCategory();
-		category.userCategory();
-		int a = sc.nextInt();
-		category.choseCategory(a);
+		}
 	}
 
 	void rideChoice() {
@@ -73,7 +67,7 @@ public class OptionPassenger {
 			break;
 		default: {
 			System.out.println("INVALID ENTRY");
-			recallMethod();
+			break;
 		}
 		}
 	}
