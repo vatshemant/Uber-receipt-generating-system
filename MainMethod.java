@@ -9,12 +9,14 @@ public class MainMethod {
 		OptionPassenger passenger = new OptionPassenger();
 		OptionDriver driver = new OptionDriver();
 		OptionCorporate corporate = new OptionCorporate();
-		while(true) {
-			driver.displayDetails();
-		option.userCategory();
-		int c = sc.nextInt();
-		if(c==4) {break;}
-		option.choseCategory(c,driver,passenger,corporate);
+		while (!false) {
+			option.userCategory();
+			int c = sc.nextInt();
+			if (c == 4) {
+				break;
+			}
+			option.userCategory();
+			option.choseCategory(c, driver, passenger, corporate);
 		}
 	}
 }
