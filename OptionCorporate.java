@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class OptionCorporate {
 	Scanner sc = new Scanner(System.in);
 
-	void detailsOption() {
+	void detailsOption() { //Display Option Function.
 		System.out.println(":::::CHOSE THE OPTION TO SEE THE DETAILS:::::");
 		System.out.println(" 1. DRIVER ");
 		System.out.println(" 2. PASSENGER");
