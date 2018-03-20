@@ -9,7 +9,7 @@ public class OptionDriver {
 	String name;
 	int vehicleNumber;
 
-	void inputDetails() {
+	void inputDetails() { //Input Details function.
 		System.out.println("::::ENTER YOUR DETAILS::::");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER YOUR NAME");
@@ -19,7 +19,7 @@ public class OptionDriver {
 
 	}
 
-	void displayDetails(OptionPassenger passenger) {
+	void displayDetails(OptionPassenger passenger) {//Display Details function.
 		System.out.println("DRIVER NAME::::::::: " + name);
 		System.out.println("VEHICLE NUMBER:::::: " + vehicleNumber);
 		System.out.println("DISTANCE TRAVELLED:: " + passenger.distance + " kms.");
@@ -28,7 +28,7 @@ public class OptionDriver {
 	}
 
 
-public void driverlist(OptionDriver driver, OptionPassenger passenger) {
+public void driverlist(OptionDriver driver, OptionPassenger passenger) {//Function to store Driver Details in ArrayList.
 	
 	ArrayList driverlist= new ArrayList();
 	driverlist.add("Driver Name");
