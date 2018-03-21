@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class OptionCorporate {
 	Scanner sc = new Scanner(System.in);
 
-	void detailsOption() { //Display Option Function.
+	void detailsOption() {
 		System.out.println(":::::CHOSE THE OPTION TO SEE THE DETAILS:::::");
 		System.out.println(" 1. DRIVER ");
 		System.out.println(" 2. PASSENGER");
@@ -15,14 +15,14 @@ public class OptionCorporate {
 		switch (x) {
 		case 1:
 			System.out.println("::::DRIVER DETAILS ARE AS FOLLOWS::::");
-			driver.driverlist(driver,passenger);
+			driver.driverList(driver, passenger);
 			break;
 		case 2:
 			System.out.println("::::PASSENGER DETAILS ARE AS FOLLOWS::::");
+			passenger.passengerList(passenger);
 			break;
 		default: {
 			System.out.println("::::INVALID ENTRY::::");
-
 		}
 		}
 	}
