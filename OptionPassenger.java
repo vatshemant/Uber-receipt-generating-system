@@ -81,7 +81,7 @@ public class OptionPassenger {
 		}
 
 	}
-	public void passengerList(OptionPassenger passenger) {
+	public void passengerList(OptionPassenger passenger) { //Function to store passenger details after each ride.
 		ArrayList passengerlist = new ArrayList();
 		passengerlist.add("Passenger Destination");
 		passengerlist.add(passenger.destinationDetails);
