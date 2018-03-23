@@ -11,7 +11,7 @@ public class OptionCorporate {
 		System.out.println(" 2. PASSENGER");
 	}
 
-	void displayDetails(int x, OptionDriver driver, OptionPassenger passenger) {
+	void displayDetails(int x, OptionDriver driver, OptionPassenger passenger) {//Display Function.
 		switch (x) {
 		case 1:
 			System.out.println("::::DRIVER DETAILS ARE AS FOLLOWS::::");
