@@ -18,7 +18,7 @@ public class SelectCategory {
 		case 1:
 			System.out.println("::WELCOME TO DRIVER DOMAIN::: ");
 			driver.inputDetails();
-			//driver.displayDetails(passenger);
+			
 
 			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
 			choice = sc.next().charAt(0);
