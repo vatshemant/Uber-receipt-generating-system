@@ -1,6 +1,8 @@
 package uberReciptSystem;
+
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Random;
 import java.util.Scanner;
 
 public class OptionDriver {
@@ -8,23 +10,26 @@ public class OptionDriver {
 	String name;
 	int vehicleNumber;
 
-	void inputDetails() { //Input Details function to take Details of Driver.
+	void inputDetails() {
 		System.out.println("::::ENTER YOUR DETAILS::::");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER YOUR NAME");
 		name = sc.nextLine();
 		System.out.println("ENTER VEHICLE NUMBER");
 		vehicleNumber = sc.nextInt();
-	/*}
+	}
 
-	void displayDetails(OptionPassenger passenger) {
-		System.out.println("DRIVER NAME::::::::: " + name);
-		System.out.println("VEHICLE NUMBER:::::: " + vehicleNumber);
-		System.out.println("DISTANCE TRAVELLED:: " + passenger.distance + " kms.");
-		System.out.println("AMOUNT EARNED::::::: " + passenger.fare + " Rupees.");
-	}*/
+	Random rand=new Random();
+	int driverNumber=rand.nextInt(10);
+	/*
+	 * void displayDetails(OptionPassenger passenger) {
+	 * System.out.println("DRIVER NAME::::::::: " + name);
+	 * System.out.println("VEHICLE NUMBER:::::: " + vehicleNumber);
+	 * System.out.println("DISTANCE TRAVELLED:: " + passenger.distance + " kms.");
+	 * System.out.println("AMOUNT EARNED::::::: " + passenger.fare + " Rupees."); }
+	 */
 
-	public void driverList(OptionDriver driver, OptionPassenger passenger) { //Function to update driver details after each trip.
+	public void driverList(OptionDriver driver, OptionPassenger passenger) {
 
 		ArrayList driverlist = new ArrayList();
 		driverlist.add("Driver Name");
