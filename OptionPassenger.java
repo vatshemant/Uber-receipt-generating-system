@@ -1,4 +1,5 @@
 package uberReciptSystem;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -8,6 +9,7 @@ public class OptionPassenger {
 	Scanner sc = new Scanner(System.in);
 	int distance;
 	int fare;
+	int driNum;
 	String destinationDetails;
 	String cabDetails;
 
@@ -49,11 +51,13 @@ public class OptionPassenger {
 		System.out.println("3. UberXL");
 	}
 
-	void selectRide(int y) {
+	void selectRide(OptionDriver driver,int y) {
 
 		switch (y) {
 		case 1:
 			fare = distance * 8;
+			driNum=driver.driverNumber;
+			System.out.println("ALLOTED DRIVER "+driNum);
 			System.out.println("YOU HAVE CHOSEN UberGO,YOUR FARE DETAILS ARE::");
 			System.out.println("DISTANCE TRAVELLED: " + distance + "kms ");
 			System.out.println("FARE IS:: " + fare);
@@ -61,6 +65,8 @@ public class OptionPassenger {
 			break;
 		case 2:
 			fare = distance * 12;
+			driNum=driver.driverNumber;
+			System.out.println("ALLOTED DRIVER "+driNum);
 			System.out.println("YOU HAVE CHOSEN UberX,YOUR FARE DETAILS ARE::");
 			System.out.println("DISTANCE TRAVELLED: " + distance + "kms ");
 			System.out.println("FARE IS:: " + fare);
@@ -69,6 +75,8 @@ public class OptionPassenger {
 
 		case 3:
 			fare = distance * 15;
+			driNum=driver.driverNumber;
+			System.out.println("ALLOTED DRIVER "+driNum);
 			System.out.println("YOU HAVE CHOSEN UberXL,YOUR FARE DETAILS ARE::");
 			System.out.println("DISTANCE TRAVELLED: " + distance + "kms ");
 			System.out.println("FARE IS:: " + fare);
@@ -81,8 +89,11 @@ public class OptionPassenger {
 		}
 
 	}
-	public void passengerList(OptionPassenger passenger) { //Function to store passenger details.
+
+	public void passengerList(OptionPassenger passenger,OptionDriver driver) {
 		ArrayList passengerlist = new ArrayList();
+		passengerlist.add("Driver Alloted");
+		passengerlist.add(passenger.driNum);
 		passengerlist.add("Passenger Destination");
 		passengerlist.add(passenger.destinationDetails);
 		passengerlist.add("Ride Chosen");
