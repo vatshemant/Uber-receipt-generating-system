@@ -1,4 +1,5 @@
 package uberReciptSystem;
+
 import java.util.Scanner;
 
 public class SelectCategory {
@@ -18,14 +19,13 @@ public class SelectCategory {
 		case 1:
 			System.out.println("::WELCOME TO DRIVER DOMAIN::: ");
 			driver.inputDetails();
-			
+			// driver.displayDetails(passenger);
 
-			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
-			choice = sc.next().charAt(0);
-			if (choice == 'n') {
-				System.out.println("THANKS,SEE YOU SOON");
-				break;
-			}
+			/*
+			 * System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)"); choice =
+			 * sc.next().charAt(0); if (choice == 'n') {
+			 * System.out.println("THANKS,SEE YOU SOON"); break; }
+			 */
 			break;
 		case 2:
 			System.out.println("::WELCOME TO PASSENGER DOMAIN::");
@@ -34,30 +34,28 @@ public class SelectCategory {
 			passenger.selectTrip(x);
 			passenger.rideChoice();
 			int a = sc.nextInt();
-			passenger.selectRide(a);
+			passenger.selectRide(driver,a);
 
-			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
-			choice = sc.next().charAt(0);
-			if (choice == 'n') {
-				System.out.println("THANKS,SEE YOU SOON");
-				break;
-			}
+			/*
+			 * System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)"); choice =
+			 * sc.next().charAt(0); if (choice == 'n') {
+			 * System.out.println("THANKS,SEE YOU SOON"); break; }
+			 */
 			break;
 		case 3:
 			System.out.println("::WELCOME TO CORPORATE DOMAIN::");
 			corporate.detailsOption();
 			int y = sc.nextInt();
 			corporate.displayDetails(y, driver, passenger);
-			System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)");
-			choice = sc.next().charAt(0);
-			if (choice == 'n') {
-				System.out.println("THANKS,SEE YOU SOON");
-				break;
-			}
+			/*
+			 * System.out.println("DO YOU WANT TO CONTINUE??? (Y/N)"); choice =
+			 * sc.next().charAt(0); if (choice == 'n') {
+			 * System.out.println("THANKS,SEE YOU SOON"); break; }
+			 */
 			break;
 		default: {
 			System.out.println("::INVALID ENTRY,PLEASE TRY AGAIN::");
-			
+
 		}
 		}
 	}
