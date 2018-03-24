@@ -1,4 +1,5 @@
 package uberReciptSystem;
+
 import java.util.Scanner;
 
 public class MainMethod {
@@ -8,15 +9,14 @@ public class MainMethod {
 		OptionPassenger passenger = new OptionPassenger();
 		OptionDriver driver = new OptionDriver();
 		OptionCorporate corporate = new OptionCorporate();
-		 while(true){
+		while (true) {
 			option.userCategory();
 			int c = sc.nextInt();
-			
 			option.choseCategory(c, driver, passenger, corporate);
 			System.out.println(":::DO YOU WANT TO QUIT (Y/N) :::");
 			char ch;
-			ch=sc.next().charAt(0);
-			if(ch=='n'||ch=='N') {
+			ch = sc.next().charAt(0);
+			if (ch == 'y' || ch == 'Y') {
 				break;
 			}
 		}
