@@ -29,7 +29,7 @@ public class OptionDriver {
 	 * System.out.println("AMOUNT EARNED::::::: " + passenger.fare + " Rupees."); }
 	 */
 
-	public void driverList(OptionDriver driver, OptionPassenger passenger) {
+	public void driverList(OptionDriver driver, OptionPassenger passenger) {//Method to store Driver Details in a list.
 
 		ArrayList driverlist = new ArrayList();
 		driverlist.add("Driver Name");
