@@ -90,7 +90,7 @@ public class OptionPassenger {
 
 	}
 
-	public void passengerList(OptionPassenger passenger,OptionDriver driver) {
+	public void passengerList(OptionPassenger passenger,OptionDriver driver) {//Method to Store Passenger Details in a list
 		ArrayList passengerlist = new ArrayList();
 		passengerlist.add("Driver Alloted");
 		passengerlist.add(passenger.driNum);
