@@ -21,7 +21,7 @@ public class DbTableCreate {
 			System.out.println("Connected");
 			System.out.println("Creating table in given database...");
 		      stmt = (Statement) conn.createStatement();
-		      
+		      //Creating table to store details of driver and passenger.
 		      String sql = "CREATE TABLE UberDetails" +
 		                   "(DriverName VARCHAR(255), " +
 		                   " VehicleNumber INTEGER, " + 
