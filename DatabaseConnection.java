@@ -12,11 +12,11 @@ public class DbTableCreate {
 		try {
 			String driver = "com.mysql.jdbc.Driver";
 			String url = "jdbc:mysql://localhost:3306/uber";
-			String username = "root";
-			String password = "root";
+			String username = " ";
+			String password = " ";
 			Class.forName(driver);
 
-			Connection conn = (Connection) DriverManager.getConnection(url, username, password);
+			Connection conn = (Connection) DriverManager.getConnection(url, username, password);//Establishing Connection to DATABASE.
 			Statement stmt=NULL;
 			System.out.println("Connected");
 			System.out.println("Creating table in given database...");
