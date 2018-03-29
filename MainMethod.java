@@ -7,7 +7,7 @@ public class MainMethod {
 		Scanner sc = new Scanner(System.in);
 		SelectCategory option = new SelectCategory();//Category Class Object.
 		OptionPassenger passenger = new OptionPassenger();//Passenger Class Object.
-		OptionDriver driver = new OptionDriver();
+		OptionDriver driver = new OptionDriver();//Driver Class Object.
 		OptionCorporate corporate = new OptionCorporate();
 		while (true) {
 			option.userCategory();
