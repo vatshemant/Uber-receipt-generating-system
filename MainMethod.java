@@ -8,7 +8,7 @@ public class MainMethod {
 		SelectCategory option = new SelectCategory();//Category Class Object.
 		OptionPassenger passenger = new OptionPassenger();//Passenger Class Object.
 		OptionDriver driver = new OptionDriver();//Driver Class Object.
-		OptionCorporate corporate = new OptionCorporate();
+		OptionCorporate corporate = new OptionCorporate();//Corporate Class Object.
 		while (true) {
 			option.userCategory();
 			int c = sc.nextInt();
