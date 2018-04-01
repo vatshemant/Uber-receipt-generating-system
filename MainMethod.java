@@ -6,7 +6,7 @@ public class MainMethod {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		SelectCategory option = new SelectCategory();//Category Class Object.
-		OptionPassenger passenger = new OptionPassenger();//Passenger Class Object.
+		OptionPassenger passenger = new OptionPassenger();
 		OptionDriver driver = new OptionDriver();//Driver Class Object.
 		OptionCorporate corporate = new OptionCorporate();//Corporate Class Object.
 		while (true) {
