@@ -22,17 +22,18 @@ public class DbTableCreate {
 			System.out.println("Creating table in given database...");
 		      stmt = (Statement) conn.createStatement();
 		      
-		      String sql = "CREATE TABLE UberDetails" +
+		      String sql = "CREATE TABLE UberDriver" +
 		                   "(DriverName VARCHAR(255), " +
 		                   " VehicleNumber INTEGER, " + 
-		                   " DistanceCovered INTEGER, " + 
-		                   " AmountEarned INTEGER, " + 
-		                   " DriverAlloted INTEGER,"+
-		                   "PassengerDestination VARCHAR(255),"+
+		                   " DistanceCovered INTEGER) " ;
+		                stmt.executeUpdate(sql);
+			String sql1 = "CREATE TABLE UberPassenger"+
+		                   "(PassengerDestination VARCHAR(255),"+
 		                   "RideChosen VARCHAR(255),"+
 		                   "DistanceTravelled INTEGER,"+
 		                   "AmountPaid INTEGER)       "; 
-		      stmt.executeUpdate(sql);
+			        stmt.executeUpdate(sql1);
+			
 		     
 			return conn;
 		} catch (Exception e) {
