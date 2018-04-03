@@ -27,6 +27,7 @@ public class DbTableCreate {
 		                   " VehicleNumber INTEGER, " + 
 		                   " DistanceCovered INTEGER) " ;
 		                stmt.executeUpdate(sql);
+			//TABLE FOR PASSENGER DETAILS.
 			String sql1 = "CREATE TABLE UberPassenger"+
 		                   "(PassengerDestination VARCHAR(255),"+
 		                   "RideChosen VARCHAR(255),"+
