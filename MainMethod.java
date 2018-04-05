@@ -8,8 +8,8 @@ public class MainMethod {
 		SelectCategory option = new SelectCategory();
 		OptionPassenger passenger = new OptionPassenger();
 		OptionDriver driver = new OptionDriver();
-		OptionCorporate corporate = new OptionCorporate();
-		DbConnect connect1=new DbConnect();
+		OptionCorporate corporate = new OptionCorporate();//Corporate Class Object.
+		DbConnect connect1=new DbConnect();//Database connection Object.
 		while (true) {
 			option.userCategory();
 			int c = sc.nextInt();
