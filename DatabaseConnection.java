@@ -21,13 +21,13 @@ public class DbTableCreate {
 			System.out.println("Connected");
 			System.out.println("Creating table in given database...");
 		      stmt = (Statement) conn.createStatement();
-		      //TABLE FOR DRIVER DETAILS.
+		      
 		      String sql = "CREATE TABLE UberDriver" +
 		                   "(DriverName VARCHAR(255), " +
 		                   " VehicleNumber INTEGER, " + 
 		                   " DistanceCovered INTEGER) " ;
 		                stmt.executeUpdate(sql);
-			//TABLE FOR PASSENGER DETAILS.
+			
 			String sql1 = "CREATE TABLE UberPassenger"+
 		                   "(PassengerDestination VARCHAR(255),"+
 		                   "RideChosen VARCHAR(255),"+
