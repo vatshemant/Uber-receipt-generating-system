@@ -21,13 +21,7 @@ public class OptionDriver {
 
 	Random rand=new Random();
 	int driverNumber=rand.nextInt(10);
-	/*
-	 * void displayDetails(OptionPassenger passenger) {
-	 * System.out.println("DRIVER NAME::::::::: " + name);
-	 * System.out.println("VEHICLE NUMBER:::::: " + vehicleNumber);
-	 * System.out.println("DISTANCE TRAVELLED:: " + passenger.distance + " kms.");
-	 * System.out.println("AMOUNT EARNED::::::: " + passenger.fare + " Rupees."); }
-	 */
+	
 
 	public void driverList(OptionDriver driver, OptionPassenger passenger) {//Method to store Driver Details in a list.
 
