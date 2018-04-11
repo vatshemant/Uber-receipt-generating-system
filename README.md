@@ -8,4 +8,7 @@ There are total of three domians
 
 3. Corporate: This domain have all the details of driver and passenger. This domain is basically for official use.
 
-NOTE:: The DatabaseConnection Class is only for a simple demonstration of how Database is Connected to a workspace.
+All the corresponding data is stored into database using database connection class.
+DriverDetails are stored in Driver TABLE and PassengerDetails are stored in Passenger TABLE.
+
+TABLES can be created by running DBConnection Class seperately, this class connects Database with workspace and creates 2 tables namely DriverDetails and PassengerDetails.
