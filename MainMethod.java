@@ -7,7 +7,7 @@ public class MainMethod {
 		Scanner sc = new Scanner(System.in);
 		SelectCategory option = new SelectCategory();//Category Class object.
 		OptionPassenger passenger = new OptionPassenger();//Passenger Class Object.
-		OptionDriver driver = new OptionDriver();
+		OptionDriver driver = new OptionDriver();//Driver Class Object.
 		OptionCorporate corporate = new OptionCorporate();
 		DbConnect connect1=new DbConnect();
 		while (true) {
