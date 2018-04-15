@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class MainMethod {
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
-		SelectCategory option = new SelectCategory();
-		OptionPassenger passenger = new OptionPassenger();
+		SelectCategory option = new SelectCategory();//Category Class object.
+		OptionPassenger passenger = new OptionPassenger();//Passenger Class Object.
 		OptionDriver driver = new OptionDriver();
 		OptionCorporate corporate = new OptionCorporate();
 		DbConnect connect1=new DbConnect();
