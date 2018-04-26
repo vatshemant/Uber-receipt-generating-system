@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class MainMethod {
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
-		SelectCategory option = new SelectCategory();
-		OptionPassenger passenger = new OptionPassenger();
-		OptionDriver driver = new OptionDriver();
-		OptionCorporate corporate = new OptionCorporate();
+		SelectCategory option = new SelectCategory();//CATEGORY CLASS OBJECT.
+		OptionPassenger passenger = new OptionPassenger();//PASSENGER CLASS OBJECT.
+		OptionDriver driver = new OptionDriver();//DRIVER CLASS OBJECT.
+		OptionCorporate corporate = new OptionCorporate();//CORPORATE CLASS OBJECT.
 		DbConnect connect1=new DbConnect();
 		while (true) {
 			option.userCategory();
