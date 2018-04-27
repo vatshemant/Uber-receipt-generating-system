@@ -15,11 +15,11 @@ public class OptionCorporate {
 		switch (x) {
 		case 1:
 			System.out.println("::::DRIVER DETAILS ARE AS FOLLOWS::::");
-			driver.driverList(driver, passenger);//printing driver details from the list.
+			driver.driverList(driver, passenger);
 			break;
 		case 2:
 			System.out.println("::::PASSENGER DETAILS ARE AS FOLLOWS::::");
-			passenger.passengerList(passenger,driver);//printing passenger details from the list.
+			passenger.passengerList(passenger,driver);
 			break;
 		default: {
 			System.out.println("::::INVALID ENTRY::::");
