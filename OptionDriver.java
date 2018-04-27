@@ -23,7 +23,7 @@ public class OptionDriver {
 	int driverNumber=rand.nextInt(10);
 	
 
-	public void driverList(OptionDriver driver, OptionPassenger passenger) {//Method to store Driver Details in a list.
+	public void driverList(OptionDriver driver, OptionPassenger passenger) {
 
 		ArrayList driverlist = new ArrayList();
 		driverlist.add("Driver Name");
