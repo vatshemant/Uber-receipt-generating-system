@@ -16,7 +16,7 @@ public class DbTableCreate {
 			String password = " ";
 			Class.forName(driver);
 
-			Connection conn = (Connection) DriverManager.getConnection(url, username, password);
+			Connection conn = (Connection) DriverManager.getConnection(url, username, password);//Establishing Connection to the server.
 			Statement stmt=NULL;
 			System.out.println("Connected");
 			System.out.println("Creating table in given database...");
