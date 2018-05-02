@@ -9,7 +9,7 @@ public class MainMethod {
 		OptionPassenger passenger = new OptionPassenger();//PASSENGER CLASS OBJECT.
 		OptionDriver driver = new OptionDriver();//DRIVER CLASS OBJECT.
 		OptionCorporate corporate = new OptionCorporate();//CORPORATE CLASS OBJECT.
-		DbConnect connect1=new DbConnect();
+		DbConnect connect1=new DbConnect();//DbConnecton CLASS.
 		while (true) {
 			option.userCategory();
 			int c = sc.nextInt();
