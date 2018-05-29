@@ -12,8 +12,8 @@ public class DbTableCreate {
 		try {
 			String driver = "com.mysql.jdbc.Driver";
 			String url = "jdbc:mysql://localhost:3306/uber";
-			String username = " ";
-			String password = " ";
+			String username = "  ";
+			String password = "  ";
 			Class.forName(driver);
 
 			Connection conn = (Connection) DriverManager.getConnection(url, username, password);//Establishing Connection to the server.
