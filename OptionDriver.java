@@ -23,7 +23,7 @@ public class OptionDriver {
 	int driverNumber=rand.nextInt(10);
 	
 
-	public void driverList(OptionDriver driver, OptionPassenger passenger) {
+	public void driverList(OptionDriver driver, OptionPassenger passenger) {//updating data into an array list
 
 		ArrayList driverlist = new ArrayList();
 		driverlist.add("Driver Name");
