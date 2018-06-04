@@ -12,8 +12,8 @@ public class DbConnect {
 	public void UpdateDriverData(OptionDriver driver,OptionPassenger passenger) throws Exception{
 		String driver1 = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/uber";
-		String username = "root";
-		String password = "root";
+		String username = " ";
+		String password = " ";
 		Class.forName(driver1);
 
 		Connection conn = (Connection) DriverManager.getConnection(url, username, password);
@@ -24,8 +24,8 @@ public class DbConnect {
 	public void UpdatePassengerData(OptionPassenger passenger)throws Exception {
 		String driver1 = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/uber";
-		String username = "root";
-		String password = "root";
+		String username = " ";
+		String password = " ";
 		Class.forName(driver1);
 
 		Connection conn = (Connection) DriverManager.getConnection(url, username, password);
